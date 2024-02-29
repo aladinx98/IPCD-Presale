@@ -183,7 +183,6 @@ function MainSection() {
   return (
     <>
       <br />
-      <br />
       <div className="flex main-section shadow md:shadow-lg">
         <div className="main-section-form card">
 
