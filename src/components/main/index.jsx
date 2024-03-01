@@ -182,7 +182,6 @@ function MainSection() {
 
   return (
     <>
-      <br />
       <div className="flex main-section shadow md:shadow-lg">
         <div className="main-section-form card">
 
@@ -196,15 +195,15 @@ function MainSection() {
           <div style={{ textAlign: "center", margin: "1.5em 0" }}>
             <div id="main" className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 justify-evenly">
               <div className="w-full md:w-1/2 lg:w-1/3 h-24">
-                <a href="" className="btn mb-3 oxanium btn text-white font-medium text-sm dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-800" style={{ opacity: '1', transform: 'none' }}>Current price</a>
+                <a href="" className="btn mb-3 btn text-white font-medium text-sm dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-800">Current price</a>
                 <h2 className="rate">0.012 $</h2>
               </div>
               <div className="w-full md:w-1/2 lg:w-1/3 h-24">
-                <a href="" className="btn mb-3 oxanium btn text-white font-medium text-sm dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" style={{ opacity: '1', transform: 'none' }}>Next price</a>
+                <a href="" className="btn mb-3 btn text-white font-medium text-sm dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Next price</a>
                 <h2 className="rate">0.024 $</h2>
               </div>
               <div className="w-full md:w-1/2 lg:w-1/3 h-24">
-                <a href="" className="btn mb-3 oxanium btn text-white font-medium text-sm dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" style={{ opacity: '1', transform: 'none' }}>Exchange Price</a>
+                <a href="" className="btn mb-3 btn text-white font-medium text-sm dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Exchange Price</a>
                 <h2 className="rate" >0.050 $</h2>
               </div>
             </div>
@@ -269,7 +268,7 @@ function MainSection() {
           <div>
             <div style={{ textAlign: "center", margin: "1.5em 0" }}>
               {currentToken.name === "USDT" && !approvalDone && (
-                <button className="btn mb-3 oxanium btn text-white   font-medium   text-sm     dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-700" style={{ opacity: '1', transform: 'none' }}
+                <button className="btn mb-3 btn text-white font-medium text-sm dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-700"
                   onClick={approveTransaction}
                 >
                   Approve
@@ -278,7 +277,7 @@ function MainSection() {
 
               {currentToken.name === "USDT" && approvalDone && (
                 <button
-                  className="btn mb-3 oxanium btn text-white   font-medium   text-sm     dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-700" style={{ opacity: '1', transform: 'none' }}
+                  className="btn mb-3 btn text-white font-medium text-sm dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-700"
                   onClick={buyWithUsdt}
                 >
                   Buy
