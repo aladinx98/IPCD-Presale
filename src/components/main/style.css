@@ -261,7 +261,7 @@ height: auto;
   display: inline-grid;
   place-content: center;
   padding: 0.5em 1.5em;
-  font-size: 16px;
+  font-size: 14px;
   text-wrap: nowrap;
   border: 0;
   min-width: 120px;
@@ -273,7 +273,34 @@ height: auto;
   clip-path: polygon(0 var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
   transition: color .25s;
 }
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    font-size: 8px;
+  }
+}
+
 .head-h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+}
+.text-t{
+  font-size: 1rem;
 }
